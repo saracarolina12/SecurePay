@@ -63,6 +63,16 @@ function Dashboard() {
                     <Transactions status={"pending"} date={"02 APR"} descr={"Rent"} type={"-"} cant={"4350"}/>
                     <Transactions status={"done"} date={"02 APR"} descr={"Oxxo"} type={"-"} cant={"160"}/>
                     <Transactions status={"pending"} date={"03 APR"} descr={"Candy"} type={"+"} cant={"10"}/>
+
+                    <Transactions status={"done"} date={"04 APR"} descr={"Cars"} type={"-"} cant={"30000"}/>
+                    <Transactions status={"pending"} date={"05 APR"} descr={"Toys"} type={"-"} cant={"500"}/>
+                    <Transactions status={"done"} date={"06 APR"} descr={"Headphones"} type={"-"} cant={"1600"}/>
+                    <Transactions status={"pending"} date={"07 APR"} descr={"Plates"} type={"+"} cant={"100"}/>
+
+                    <Transactions status={"done"} date={"08 APR"} descr={"Guitar"} type={"-"} cant={"2200"}/>
+                    <Transactions status={"pending"} date={"09 APR"} descr={"More cars"} type={"-"} cant={"43500"}/>
+                    <Transactions status={"done"} date={"10 APR"} descr={"Farmacia Guadalajara"} type={"-"} cant={"160"}/>
+                    <Transactions status={"pending"} date={"11 APR"} descr={"lol"} type={"+"} cant={"3"}/>
                 </div>
             </div>
         </>
