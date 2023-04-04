@@ -19,7 +19,7 @@ function Transactions({date, descr, status, type, cant}) {
     
     return (
         <>
-            <button className='container' onClick={goTo(date,descr,status,type,cant)}>
+            <button className='container' onClick={goTo}>
                 <div className='date div'>
                     <p className='number'>{date}</p>
                 </div>
