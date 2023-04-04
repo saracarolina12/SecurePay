@@ -6,6 +6,7 @@ import { BrowserRouter as Router,
           Switch,
           Route,
           Link, Routes } from "react-router-dom";
+import Details from './pages/details';
 
 
 function App() {
@@ -13,10 +14,8 @@ function App() {
   return (
     <Router>
       <Routes>
-          <Route path="/" element={<Login />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
-        </Route>
+        <Route exact path="/" element={<Dashboard />} />
+        <Route path="/details" element={<Details />} />
       </Routes>
     </Router>
   );
