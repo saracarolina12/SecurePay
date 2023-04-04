@@ -9,13 +9,15 @@ import {AiFillCheckCircle} from 'react-icons/ai'
 import {MdPendingActions} from 'react-icons/md'
 
 
-function Transactions({date, descr, status, type, cant}) {
+function Transactions({bank, account, date, descr, status, type, cant}) {
     const navigate = useNavigate();
 
     const goTo = () =>{
         console.log("click", date);
         navigate("/details", {
             state: {
+                bank: bank,
+                account: account,
                 date: date,
                 descr: descr,
                 status: status,

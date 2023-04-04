@@ -38,7 +38,8 @@
 }
 
 .container_{
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 12px );
@@ -46,6 +47,10 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     background-color: rgb(244, 246, 253);
+
+    height: 25rem;
+    margin: 0em;
+    overflow-y: auto;
 }
 
 .Row {
@@ -56,4 +61,11 @@
 }
 .Column {
     display: table-cell;
+}
+
+.sticky_{
+    position: sticky;
+}
+.transactions{
+    width: 25rem;
 }

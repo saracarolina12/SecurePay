@@ -37,12 +37,20 @@ function Dashboard() {
             </div>
             
             <div className="split right">
-                <div className="centered container_">
-                    <h1 style={{color:'#104B84'}}>Transactions</h1>
-                    <Transactions hour={"12:55"} status={"done"} date={"01 APR 2023"} descr={"Domino's Pizza"} type={"-"} cant={"310.80"}/>
-                    <Transactions status={"pending"} date={"02 APR 2023"} descr={"Rent"} type={"-"} cant={"4350"}/>
-                    <Transactions status={"done"} date={"02 APR 2023"} descr={"Oxxo"} type={"-"} cant={"160"}/>
-                    <Transactions status={"pending"} date={"03 APR 2023"} descr={"Candy"} type={"+"} cant={"10"}/>
+                <div className='centered transactions'>
+                        <div className='sticky_'><h1 style={{color:'#104B84'}}>Transactions</h1></div>
+                        <div className=" container_">
+                            <Transactions account={"**** **** **** 1029"} status={"done"} date={"01 APR 2023"} descr={"Domino's Pizza"} type={"-"} cant={"310.80"}/>
+                            <Transactions account={"**** **** **** 9999"} status={"pending"} date={"20 MAR 2023"} descr={"Rent"} type={"-"} cant={"4350.10"}/>
+                            <Transactions account={"**** **** **** 1112"} status={"done"} date={"22 MAR 2023"} descr={"Oxxo"} type={"-"} cant={"160.35"}/>
+                            <Transactions account={"**** **** **** 0001"} status={"pending"} date={"24 MAR 2023"} descr={"Candy"} type={"+"} cant={"10.62"}/>
+                            <Transactions account={"**** **** **** 4545"} status={"done"} date={"01 APR 2023"} descr={"Domino's Pizza"} type={"-"} cant={"310.80"}/>
+                            <Transactions account={"**** **** **** 1010"} status={"done"} date={"02 APR 2023"} descr={"Rent"} type={"-"} cant={"4350.34"}/>
+                            <Transactions account={"**** **** **** 3399"} status={"done"} date={"02 APR 2023"} descr={"Oxxo"} type={"-"} cant={"160.10"}/>
+                            <Transactions account={"**** **** **** 2323"} status={"done"} date={"03 APR 2023"} descr={"Candy"} type={"+"} cant={"64.67"}/>
+                            <Transactions account={"**** **** **** 7711"} status={"pending"} date={"03 APR 2023"} descr={"Oxxo"} type={"-"} cant={"160.00"}/>
+                            <Transactions account={"**** **** **** 5555"} status={"pending"} date={"03 APR 2023"} descr={"Candy"} type={"+"} cant={"34.10"}/>
+                        </div>
                 </div>
             </div>
         </>

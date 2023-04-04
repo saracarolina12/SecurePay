@@ -9,7 +9,6 @@ function Login() {
     const [passw, setPassw] = useState("");
 
     const checkLogin = () =>{
-        console.log("hola");
         if(!name && !passw){
             alert("Fill the blanks")
         }else{
