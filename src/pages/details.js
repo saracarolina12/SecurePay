@@ -10,8 +10,8 @@ import { useLocation } from "react-router-dom";
 
 function Details() {
     const location = useLocation();
-    let data = location.data
-    // console.log(data);
+    let data = location.state
+    console.log(data);
     return(
         <>
             <div className="split left">
@@ -24,9 +24,9 @@ function Details() {
                 <div className="centered container_">
                     
                     <div className='tittle'>
-                        <h2>cant</h2>
-                        <p>date</p>
-                        <p>fecha</p>
+                        <h2>${data?.cant}</h2>
+                        <p>{data?.date}</p>
+                        <p>{data?.descr}</p>
                     </div>
                 </div>
             </div>

@@ -12,9 +12,17 @@ import { useNavigate } from "react-router-dom";
 function Transactions({date, descr, status, type, cant}) {
     const navigate = useNavigate();
 
-    const goTo = ({date, descr, status, type, cant}) =>{
-        console.log("click");
-        navigate("/details", {data: {date, descr, status, type, cant}});
+    const goTo = () =>{
+        console.log("click", date);
+        navigate("/details", {
+            state: {
+                date: date,
+                descr: descr,
+                status: status,
+                type: type,
+                cant: cant,
+            }
+        });
     }
     
     return (
