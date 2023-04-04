@@ -7,6 +7,7 @@ import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import {AiFillCheckCircle} from 'react-icons/ai'
 import {MdPendingActions} from 'react-icons/md'
 import { useNavigate } from "react-router-dom";
+import { logMessage } from '../Logger';
 
 
 function Transactions({date, descr, status, type, cant}) {
@@ -14,6 +15,7 @@ function Transactions({date, descr, status, type, cant}) {
 
     const goTo = () =>{
         console.log("click", date);
+        logMessage("Clicked on " + " " + date + " " + descr + " " + status + " " + type + " " + cant)
         navigate("/details", {
             state: {
                 date: date,
@@ -24,6 +26,7 @@ function Transactions({date, descr, status, type, cant}) {
             }
         });
     }
+
     
     return (
         <>

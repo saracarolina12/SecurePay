@@ -7,9 +7,10 @@ import { BrowserRouter as Router,
           Route,
           Link, Routes } from "react-router-dom";
 import Details from './pages/details';
-
+import {logMessage} from './Logger.js'
 
 function App() {
+  logMessage("Launching app")
 
   return (
     <Router>

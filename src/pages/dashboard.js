@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Cards from 'react-credit-cards-2';
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import Transactions from '../components/transactions';
+import { logMessage } from '../Logger';
 
 
 function Dashboard() {
@@ -16,6 +17,8 @@ function Dashboard() {
         name: 'Sara Carolina Gómez Delgado',
         focus: '',
     });
+
+    logMessage("Loading Dashboard")
 
     return(
         <>
