@@ -27,6 +27,7 @@ function Transactions({date, descr, status, type, cant}) {
         });
     }
 
+    logMessage("Testing error", "error")
     
     return (
         <>
